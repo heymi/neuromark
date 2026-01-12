@@ -1,0 +1,46 @@
+{
+  "" : {
+    "const-values" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/NeuroMarkMac-primary.swiftconstvalues",
+    "dependencies" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/NeuroMarkMac-primary.d",
+    "diagnostics" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/NeuroMarkMac-primary.dia",
+    "emit-module-dependencies" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/NeuroMarkMac-primary-emit-module.d",
+    "emit-module-diagnostics" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/NeuroMarkMac-primary-emit-module.dia",
+    "pch" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/NeuroMarkMac-primary-Bridging-header.pch",
+    "swift-dependencies" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/NeuroMarkMac-primary.swiftdeps"
+  },
+  "/Users/strictly/neuromark/macos/Sources/ContentView.swift" : {
+    "index-unit-output-path" : "/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/ContentView.o"
+  },
+  "/Users/strictly/neuromark/macos/Sources/NeuroMarkMacApp.swift" : {
+    "index-unit-output-path" : "/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/NeuroMarkMacApp.o",
+    "llvm-bc" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/NeuroMarkMacApp.bc",
+    "object" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/NeuroMarkMacApp.o"
+  },
+  "/Users/strictly/neuromark/macos/Sources/SidebarView.swift" : {
+    "index-unit-output-path" : "/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/SidebarView.o",
+    "llvm-bc" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/SidebarView.bc",
+    "object" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/SidebarView.o"
+  },
+  "/Users/strictly/neuromark/macos/Sources/StaticFileServer.swift" : {
+    "index-unit-output-path" : "/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/StaticFileServer.o",
+    "llvm-bc" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/StaticFileServer.bc",
+    "object" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/StaticFileServer.o"
+  },
+  "/Users/strictly/neuromark/macos/Sources/VisualEffectView.swift" : {
+    "index-unit-output-path" : "/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/VisualEffectView.o",
+    "llvm-bc" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/VisualEffectView.bc",
+    "object" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/VisualEffectView.o"
+  },
+  "/Users/strictly/neuromark/macos/Sources/WebBridge.swift" : {
+    "index-unit-output-path" : "/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/WebBridge.o",
+    "llvm-bc" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/WebBridge.bc",
+    "object" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/WebBridge.o"
+  },
+  "/Users/strictly/neuromark/macos/Sources/WebView.swift" : {
+    "index-unit-output-path" : "/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/WebView.o",
+    "llvm-bc" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/WebView.bc",
+    "object" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/WebView.o"
+  }
+}

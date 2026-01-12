@@ -1,0 +1,5 @@
+---
+triple:          'arm64-apple-darwin'
+binary-path:     '/Users/strictly/neuromark/macos/DerivedData/Build/Products/Release/NeuroMarkMac.app/Contents/MacOS/NeuroMarkMac'
+relocations:     []
+...

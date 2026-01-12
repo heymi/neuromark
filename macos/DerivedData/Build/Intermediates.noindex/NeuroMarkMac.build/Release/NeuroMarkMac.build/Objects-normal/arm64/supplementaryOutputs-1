@@ -1,0 +1,12 @@
+{
+  "/Users/strictly/neuromark/macos/Sources/ContentView.swift" : {
+    "abi-baseline-json" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/NeuroMarkMac.abi.json",
+    "const-values" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/NeuroMarkMac-primary.swiftconstvalues",
+    "dependencies" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/NeuroMarkMac-primary.d",
+    "diagnostics" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/NeuroMarkMac-primary.dia",
+    "objc-header" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/NeuroMarkMac-Swift.h",
+    "swiftdoc" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/NeuroMarkMac.swiftdoc",
+    "swiftmodule" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/NeuroMarkMac.swiftmodule",
+    "swiftsourceinfo" : "/Users/strictly/neuromark/macos/DerivedData/Build/Intermediates.noindex/NeuroMarkMac.build/Release/NeuroMarkMac.build/Objects-normal/arm64/NeuroMarkMac.swiftsourceinfo"
+  }
+}

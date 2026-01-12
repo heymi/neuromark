@@ -1,0 +1,323 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18AE30C0FB76A4FD3A695E04 /* dist in Resources */ = {isa = PBXBuildFile; fileRef = 55405528A49C2181178D84BC /* dist */; };
+		20A0C1116AC2E4A96E29D075 /* WebBridge.swift in Sources */ = {isa = PBXBuildFile; fileRef = D994F1E7040CCFC23CA3D557 /* WebBridge.swift */; };
+		4F1F1F5B3BDB7E9A8A387972 /* StaticFileServer.swift in Sources */ = {isa = PBXBuildFile; fileRef = FE5F9D6CD58951FE61238FD5 /* StaticFileServer.swift */; };
+		5FF114A2D92035475D89921B /* VisualEffectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAD64105D0CF36173428B6E9 /* VisualEffectView.swift */; };
+		623DF48AAC7CACAFE23ED3B1 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FD2844FDF8E7E4B2C6CD53E /* WebView.swift */; };
+		AFB39962B814D4DB04E8CA99 /* SidebarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69E4F26A2F9A50F1E6383B3D /* SidebarView.swift */; };
+		CB3D596F6EB43287F7624923 /* NeuroMarkMacApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA627E82182DED11C1A550DA /* NeuroMarkMacApp.swift */; };
+		E0F0BAB4F54F410D2244C53C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F9E31FBCE22979F3806389A3 /* ContentView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		55405528A49C2181178D84BC /* dist */ = {isa = PBXFileReference; lastKnownFileType = folder; name = dist; path = Resources/dist; sourceTree = SOURCE_ROOT; };
+		69E4F26A2F9A50F1E6383B3D /* SidebarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SidebarView.swift; sourceTree = "<group>"; };
+		6D4106A93BA7EE739A85B881 /* NeuroMarkMac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NeuroMarkMac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8C343D1668FD3DDA5A379B95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		9FD2844FDF8E7E4B2C6CD53E /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		A0F686AC970634802EEC5F5F /* NeuroMarkMac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NeuroMarkMac.entitlements; sourceTree = "<group>"; };
+		AA627E82182DED11C1A550DA /* NeuroMarkMacApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NeuroMarkMacApp.swift; sourceTree = "<group>"; };
+		CAD64105D0CF36173428B6E9 /* VisualEffectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VisualEffectView.swift; sourceTree = "<group>"; };
+		D994F1E7040CCFC23CA3D557 /* WebBridge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebBridge.swift; sourceTree = "<group>"; };
+		F9E31FBCE22979F3806389A3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FE5F9D6CD58951FE61238FD5 /* StaticFileServer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticFileServer.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		16FF4F11C07BB4580804375A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				6D4106A93BA7EE739A85B881 /* NeuroMarkMac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A3CDB303AB38F0C22D1B22C7 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				F9E31FBCE22979F3806389A3 /* ContentView.swift */,
+				8C343D1668FD3DDA5A379B95 /* Info.plist */,
+				A0F686AC970634802EEC5F5F /* NeuroMarkMac.entitlements */,
+				AA627E82182DED11C1A550DA /* NeuroMarkMacApp.swift */,
+				69E4F26A2F9A50F1E6383B3D /* SidebarView.swift */,
+				FE5F9D6CD58951FE61238FD5 /* StaticFileServer.swift */,
+				CAD64105D0CF36173428B6E9 /* VisualEffectView.swift */,
+				D994F1E7040CCFC23CA3D557 /* WebBridge.swift */,
+				9FD2844FDF8E7E4B2C6CD53E /* WebView.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		F4C7E6FDDE0D775C644CA129 = {
+			isa = PBXGroup;
+			children = (
+				55405528A49C2181178D84BC /* dist */,
+				A3CDB303AB38F0C22D1B22C7 /* Sources */,
+				16FF4F11C07BB4580804375A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CE8A492B73266EA0EE8BC20C /* NeuroMarkMac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3566D865DDB39CAD8298F04B /* Build configuration list for PBXNativeTarget "NeuroMarkMac" */;
+			buildPhases = (
+				5ECBE1251B71314394A4B448 /* Sources */,
+				2CB0888E17502952136E3DA0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NeuroMarkMac;
+			packageProductDependencies = (
+			);
+			productName = NeuroMarkMac;
+			productReference = 6D4106A93BA7EE739A85B881 /* NeuroMarkMac.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4379946AEF23D9CBD0DDEAF9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+			};
+			buildConfigurationList = 666E206E5CE3B2A758A0445B /* Build configuration list for PBXProject "NeuroMarkMac" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = F4C7E6FDDE0D775C644CA129;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CE8A492B73266EA0EE8BC20C /* NeuroMarkMac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2CB0888E17502952136E3DA0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18AE30C0FB76A4FD3A695E04 /* dist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5ECBE1251B71314394A4B448 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0F0BAB4F54F410D2244C53C /* ContentView.swift in Sources */,
+				CB3D596F6EB43287F7624923 /* NeuroMarkMacApp.swift in Sources */,
+				AFB39962B814D4DB04E8CA99 /* SidebarView.swift in Sources */,
+				4F1F1F5B3BDB7E9A8A387972 /* StaticFileServer.swift in Sources */,
+				5FF114A2D92035475D89921B /* VisualEffectView.swift in Sources */,
+				20A0C1116AC2E4A96E29D075 /* WebBridge.swift in Sources */,
+				623DF48AAC7CACAFE23ED3B1 /* WebView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4EA69DBB69BBC72758F1B2CF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sources/NeuroMarkMac.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Sources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neuromark.mac;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		8A2CD305A0AC8D3FFA57DB25 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F0DE325A015E7CC09CA827BB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F3265FC8E11F81197355D9A4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Sources/NeuroMarkMac.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = Sources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 26.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.neuromark.mac;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3566D865DDB39CAD8298F04B /* Build configuration list for PBXNativeTarget "NeuroMarkMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EA69DBB69BBC72758F1B2CF /* Debug */,
+				F3265FC8E11F81197355D9A4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		666E206E5CE3B2A758A0445B /* Build configuration list for PBXProject "NeuroMarkMac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F0DE325A015E7CC09CA827BB /* Debug */,
+				8A2CD305A0AC8D3FFA57DB25 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4379946AEF23D9CBD0DDEAF9 /* Project object */;
+}

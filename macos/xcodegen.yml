@@ -1,0 +1,20 @@
+name: NeuroMarkMac
+options:
+  deploymentTarget:
+    macOS: "26.0"
+targets:
+  NeuroMarkMac:
+    type: application
+    platform: macOS
+    deploymentTarget: "26.0"
+    frameworks:
+      - Network
+    sources:
+      - path: Sources
+      - path: Resources/dist
+        type: folder
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.neuromark.mac
+        INFOPLIST_FILE: Sources/Info.plist
+        CODE_SIGN_ENTITLEMENTS: Sources/NeuroMarkMac.entitlements
