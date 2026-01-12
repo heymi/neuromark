@@ -5,8 +5,10 @@ import {
     Settings,
     User
 } from 'lucide-react';
+import { getCategoryIcon } from './categoryIcons';
 
 interface SidebarProps {
+  categories: { name: string; count: number }[];
   popularTags: { name: string; count: number }[];
   activeCategory: string | 'All';
   activeProject: string | null;
@@ -20,6 +22,7 @@ interface SidebarProps {
 }
 
 export const Sidebar: React.FC<SidebarProps> = ({ 
+  categories,
   popularTags,
   activeCategory,
   activeProject,
@@ -61,6 +64,36 @@ export const Sidebar: React.FC<SidebarProps> = ({
                 icon={<Star size={18} strokeWidth={2} />}
                 label="Favorites"
             />
+        </div>
+
+        {/* Collections */}
+        <div className="space-y-2 mt-2">
+             <SectionHeader label="Collections" />
+            {categories.length === 0 ? (
+                <div className="px-3 text-[11px] text-system-secondary dark:text-system-dark-secondary">
+                    No collections yet.
+                </div>
+            ) : (
+                <div className="space-y-1">
+                    {categories.map(category => (
+                        <NavItem
+                            key={category.name}
+                            active={activeCategory === category.name && !activeProject && !activeTag}
+                            onClick={() => {
+                                onSelectCategory(category.name);
+                                if (showFavoritesOnly) onToggleFavoritesOnly();
+                            }}
+                            icon={
+                                <span className="text-indigo-500">
+                                    {getCategoryIcon(category.name, 16)}
+                                </span>
+                            }
+                            label={category.name}
+                            count={category.count}
+                        />
+                    ))}
+                </div>
+            )}
         </div>
 
         {/* Tags */}

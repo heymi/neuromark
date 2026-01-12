@@ -7,7 +7,8 @@ import { Sidebar } from './components/Sidebar';
 import { LibraryHero } from './components/LibraryHero';
 import { SettingsModal } from './components/SettingsModal';
 import { ProjectDashboard } from './components/ProjectDashboard';
-import { Search, LayoutList, LayoutGrid, Menu, Plus, Tag, Moon, Sun, Star, Sparkles, X, Loader2, Monitor } from 'lucide-react';
+import { ProjectsPanel } from './components/ProjectsPanel';
+import { Search, LayoutList, LayoutGrid, Menu, Plus, Tag, Moon, Sun, Star, Sparkles, X, Loader2, Monitor, SlidersHorizontal } from 'lucide-react';
 import { v4 as uuidv4 } from 'uuid';
 import { askLibrary } from './services/geminiService';
 import { isSupabaseConfigured, supabase } from './services/supabaseClient';
@@ -161,6 +162,7 @@ const App: React.FC = () => {
   const [isSettingsOpen, setIsSettingsOpen] = useState(false);
   
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isProjectsPanelOpen, setIsProjectsPanelOpen] = useState(false);
   
   // Theme State
   const [theme, setTheme] = useState<'light' | 'dark' | 'auto'>(() => {
@@ -849,6 +851,7 @@ const App: React.FC = () => {
       {/* Sidebar */}
       <div className={`fixed inset-y-0 left-0 z-50 transform transition-transform duration-300 md:relative md:translate-x-0 ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}`}>
         <Sidebar 
+          categories={categoriesStats}
           popularTags={popularTags}
           activeCategory={activeCategory}
           activeProject={activeProject}
@@ -1063,6 +1066,78 @@ const App: React.FC = () => {
         {/* Scrollable Content */}
         <div className="flex-1 overflow-y-auto p-6 md:p-10 custom-scrollbar">
             <div className="max-w-[1400px] mx-auto pb-20">
+                <div className="mb-6">
+                    <div className="flex items-center gap-2 flex-wrap">
+                        <div className="flex items-center gap-2 overflow-x-auto no-scrollbar pb-1">
+                            <button
+                                type="button"
+                                onClick={() => {
+                                    setActiveProject(null);
+                                    setIsProjectsPanelOpen(false);
+                                }}
+                                className={`px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors ${
+                                    !activeProject
+                                        ? 'bg-black text-white border-black dark:bg-white dark:text-black dark:border-white'
+                                        : 'bg-white/70 dark:bg-white/5 border-black/5 dark:border-white/10 text-system-secondary dark:text-system-dark-secondary hover:text-system-text dark:hover:text-system-dark-text'
+                                }`}
+                            >
+                                All
+                            </button>
+                            {projectsStats.map((project) => (
+                                <button
+                                    key={project.id}
+                                    type="button"
+                                    onClick={() => handleSelectProject(project.id)}
+                                    className={`px-3 py-1.5 rounded-full text-xs font-semibold border transition-colors flex items-center gap-2 ${
+                                        activeProject === project.id
+                                            ? 'bg-black text-white border-black dark:bg-white dark:text-black dark:border-white'
+                                            : 'bg-white/70 dark:bg-white/5 border-black/5 dark:border-white/10 text-system-secondary dark:text-system-dark-secondary hover:text-system-text dark:hover:text-system-dark-text'
+                                    }`}
+                                >
+                                    <span
+                                        className="w-2 h-2 rounded-full"
+                                        style={{ backgroundColor: project.color }}
+                                    />
+                                    <span className="truncate max-w-[140px]">{project.name}</span>
+                                    <span className={`text-[10px] font-semibold ${activeProject === project.id ? 'text-white/80 dark:text-black/70' : 'text-gray-400 dark:text-gray-500'}`}>
+                                        {project.count}
+                                    </span>
+                                </button>
+                            ))}
+                        </div>
+                        <div className="relative">
+                            <button
+                                type="button"
+                                onClick={() => setIsProjectsPanelOpen((v) => !v)}
+                                className="px-3 py-1.5 rounded-full text-xs font-semibold border border-black/5 dark:border-white/10 bg-white/70 dark:bg-white/5 text-system-secondary dark:text-system-dark-secondary hover:text-system-text dark:hover:text-system-dark-text transition-colors flex items-center gap-2"
+                            >
+                                <SlidersHorizontal size={12} />
+                                Manage
+                            </button>
+                            {isProjectsPanelOpen && (
+                                <>
+                                    <div
+                                        className="fixed inset-0 z-10"
+                                        onClick={() => setIsProjectsPanelOpen(false)}
+                                    />
+                                    <div className="absolute right-0 mt-2 w-[320px] z-20">
+                                        <ProjectsPanel
+                                            projects={projectsStats}
+                                            activeProject={activeProject}
+                                            onSelectProject={(projectId) => {
+                                                handleSelectProject(projectId);
+                                                setIsProjectsPanelOpen(false);
+                                            }}
+                                            onAddProject={handleAddProject}
+                                            onUpdateProject={(id, name, color) => handleUpdateProject(id, { name, color })}
+                                            onDeleteProject={handleDeleteProject}
+                                        />
+                                    </div>
+                                </>
+                            )}
+                        </div>
+                    </div>
+                </div>
                 
                 {/* Condition: Show Project Dashboard IF in project, else Global Stats */}
                 {activeProjectData && projectSpecificStats ? (
@@ -1079,17 +1154,6 @@ const App: React.FC = () => {
                     /* Replaced StatsOverview with LibraryHero for Discovery */
                     <LibraryHero 
                         bookmarks={bookmarks} 
-                        categories={categoriesStats} 
-                        activeCategory={activeCategory}
-                        onSelectCategory={handleSelectCategory}
-                        showFavoritesOnly={showFavoritesOnly}
-                        onToggleFavoritesOnly={() => setShowFavoritesOnly(false)}
-                        projects={projectsStats}
-                        activeProject={activeProject}
-                        onSelectProject={handleSelectProject}
-                        onAddProject={handleAddProject}
-                        onUpdateProject={(id, name, color) => handleUpdateProject(id, { name, color })}
-                        onDeleteProject={handleDeleteProject}
                     />
                 )}
 
